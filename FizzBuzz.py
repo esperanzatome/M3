@@ -10,7 +10,7 @@ def Fizz_Buzz(stop):
     else:
       collection.append(num)
   return collection
-print(Fizz_Buzz(101))  
+Fizz_Buzz(101)
   
 
   
