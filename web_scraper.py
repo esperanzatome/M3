@@ -1,5 +1,4 @@
 import requests
-import inflection
 from bs4 import BeautifulSoup
 r = requests.get('http://www.dailysmarty.com/topics/python')
 pagina= BeautifulSoup(r.text,features="html")
