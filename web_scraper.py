@@ -1,9 +1,8 @@
 import requests
-import pprint
 import inflection
 from bs4 import BeautifulSoup
 r = requests.get('http://www.dailysmarty.com/topics/python')
-pagina= BeautifulSoup(r.text,features="html5lib")
+pagina= BeautifulSoup(r.text,features="html")
 posts= pagina.find_all('h2')
 lista_posts=list(posts)[:]
 def web_scraper():
